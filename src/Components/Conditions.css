@@ -1,0 +1,34 @@
+.outermostDiv{
+    position: fixed;
+    top: 93%;
+    left: 87%;
+    transform: translate(-50% , -50%);
+    background-color: rgb(228 228 228);
+    padding: 10px;
+    z-index: 1000;
+    height: 38px;
+    width:376px;
+    border-radius:10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+@media (max-width:1450px){
+    .outermostDiv{
+        left: 84%;
+        
+    }
+}
+@media (max-width:950px){
+    .outermostDiv{
+        left: 84%;
+        top: 70%;
+    }
+}
+
+@media (max-width:390px){
+    .outermostDiv{
+        left: 48%;
+        top: 63%;
+    }
+}

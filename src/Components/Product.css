@@ -1,0 +1,33 @@
+.addButton{
+    background-color: #FBD1D2;
+    border: 1px solid #ac8081;
+    margin-top: 10px;
+}
+
+.addButton:hover{
+    transform: scale(1.03);
+}
+
+.buttonsDiv{
+    display: flex;
+    margin-left: -10px;
+
+}
+
+.cartButtons{
+    height: 19px;
+    width: 24px;
+    margin: 12px;
+    border: 1px solid #ac8081;
+    background-color: #f5e6e7;
+    border-radius: 18px;
+    
+}
+
+.counter{
+    margin-top: 9px;
+}
+
+.mt-10{
+    margin-top: 15px !important;
+}

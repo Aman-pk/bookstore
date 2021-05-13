@@ -1,0 +1,29 @@
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    overflow-x: hidden;
+}
+
+.listItems{
+    text-decoration:none;
+    color: #0f5c86;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 500;
+   
+}
+
+.listItems:hover{
+    cursor: pointer;
+    
+}
+.logoTitle{
+    color: #145273;
+    margin-left: 30px;
+    margin-top: 6px;
+    font-family: 'Pacifico', cursive !important;
+    font-weight: 400;
+    font-size: 19px;
+}

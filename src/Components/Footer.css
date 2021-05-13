@@ -1,0 +1,21 @@
+.footerDiv{
+    margin-top: 130px;
+    height: 60px;
+    background-color: #FBD1D2;
+    display: flex;
+    justify-content: center;
+}
+
+.footerDiv img{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.socialIcon{
+    transition: transform 0.3s;
+}
+
+.socialIcon:hover{
+    transform: scale(1.1);
+}
