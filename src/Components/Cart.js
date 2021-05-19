@@ -184,33 +184,6 @@ function Cart(props) {
         ) : (
           ""
         )}
-        {/* {path && path == "7" ? (
-          <>
-            <div style={{ display: "flex" }}>
-              <img className="imgSize" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2018/11/24/6defa6b9-4b5b-440d-90a5-053ddc7f39371543028521322-1.jpg" />
-            </div>
-            <div style={{ width: "400px",paddingTop:"20px",fontSize:"0.8rem"}}>
-              <h2 >Calvin Klein One Unisex EDT, 200ml</h2>
-              
-              <div>
-                <h3 className="mt-10"> ₹2999</h3>
-              </div>
-
-              <div className="buttonsDiv ">
-                <button onClick={props.decrementCount} className="cartButtons">
-                  -
-                </button>
-                <p className="counter">{props.count}</p>
-                <button onClick={props.incrementCount} className="cartButtons">
-                  +
-                </button>
-              </div>
-              <h2>Total: ₹{props.count*2999}</h2>
-            </div>
-          </>
-        ) : (
-          ""
-        )} */}
       </div>
     </>
   );

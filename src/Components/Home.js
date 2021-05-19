@@ -17,6 +17,29 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Conditions from './Conditions'
 
+// const products={
+//   "data":[
+//     {
+//     "image" : {novel1}
+//     },
+//     {
+//       "image" : {novel2}
+//       },
+//       {
+//         "image" : {novel3}
+//         },
+//         {
+//           "image" : {novel4}
+//           },
+//           {
+//             "image" : {novel5}
+//             },
+//             {
+//               "image" : {novel6}
+//               },
+//   ]
+// }
+
 function Home() {
   var settings = {
     dots: true,

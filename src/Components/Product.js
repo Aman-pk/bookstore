@@ -7,14 +7,17 @@ import novel3 from "../Images/novel3.jpg";
 import novel4 from "../Images/novel4.jpg";
 import novel5 from "../Images/novel5.jpg";
 import novel6 from "../Images/novel6.jpg";
+import {addToBasket} from '../redux/actions/cartActions'
 
 import UpdatedComp from "./Hoc/withCounter";
 import AddToCart from "./AddToCart";
+import { useDispatch } from "react-redux";
 
 function Product(props) {
   const { id } = useParams();
 
   const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -35,7 +38,7 @@ function Product(props) {
                 <h3 className="mt-10"> ₹399</h3>
               </div>
 
-              <button className="addButton" onClick={() => setIsOpen(true)}>
+              <button className="addButton"  onClick={() => dispatch(addToBasket({"image":novel3,"price":299}))}>
                 Add To Cart
               </button>
               <div className="dialogBox">
@@ -71,7 +74,7 @@ function Product(props) {
                 <h3 className="mt-10"> ₹499</h3>
               </div>
 
-              <button className="addButton" onClick={() => setIsOpen(true)}>
+              <button className="addButton"  onClick={() => dispatch(addToBasket({"image":novel3,"price":299}))}>
                 Add To Cart
               </button>
               <AddToCart open={isOpen} onClose={() => setIsOpen(false)} />
@@ -104,7 +107,7 @@ function Product(props) {
                 <h3 className="mt-10"> ₹299</h3>
               </div>
 
-              <button className="addButton" onClick={() => setIsOpen(true)}>
+              <button className="addButton" onClick={() => dispatch(addToBasket({"image":novel3,"price":299}))}>
                 Add To Cart
               </button>
               <AddToCart open={isOpen} onClose={() => setIsOpen(false)} />
@@ -137,7 +140,7 @@ function Product(props) {
                 <h3 className="mt-10"> ₹699</h3>
               </div>
 
-              <button className="addButton" onClick={() => setIsOpen(true)}>
+              <button className="addButton"  onClick={() => dispatch(addToBasket({"image":novel3,"price":299}))}>
                 Add To Cart
               </button>
               <AddToCart open={isOpen} onClose={() => setIsOpen(false)} />
@@ -172,7 +175,7 @@ function Product(props) {
                 <h3 className="mt-10"> ₹499</h3>
               </div>
 
-              <button className="addButton" onClick={() => setIsOpen(true)}>
+              <button className="addButton"  onClick={() => dispatch(addToBasket({"image":novel3,"price":299}))}>
                 Add To Cart
               </button>
               <AddToCart open={isOpen} onClose={() => setIsOpen(false)} />
